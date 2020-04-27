@@ -1,0 +1,44 @@
+##NMSL##author meteor
+#papi变量
+#%artmailbox_newmail%
+mysql:
+  url: 'jdbc:mysql://localhost:3306/artworld'
+  user: 'root'
+  password: 'root'
+Mail_Setting:
+  Info:
+    name: '&f邮件 &e@mailname@'
+    ID: 'PAPER'
+    data: 0
+    Title: '&a&l邮箱'
+    #编码存在的lore行数-1(java里数组从0开始)
+    int: 4
+    prefix:
+      - '&8&l&m              '
+      - '&f < &a邮件信息 &f>'
+      - '&e 发件人: &c@sender@'
+      - '&e 发件时间: &c@time@'
+      - '&e 邮件编码: &c@key@'
+      - '&8&l&m              '
+      - '&f < &a邮件包含 &f>'
+    suffix: '&e @item@ x @amount@'
+Message:
+  #有未读邮件时候papi显示的字符
+  new_mail: '&a有新的邮件未领取'
+  #无未读邮件时候papi显示的字符
+  no_mail: '&c没有新的邮件待领取'
+  new_mail_nopapi: '&f[&aArtWorld&f] &c有新的邮件未领取'
+  use_mail: '&f[&aArtWorld&f] &c已领取编号为 &e@key@ &c的邮件'
+item:
+  flag:
+    name: '&f '
+    ID: 'STONE'
+    data: 0
+  return:
+    name: '&a返回'
+    ID: 'STONE'
+    data: 0
+    lore:
+      - ''
+      - ''
+    commands: 'trmenu open menu @player@'

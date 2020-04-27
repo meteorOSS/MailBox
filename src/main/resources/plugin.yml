@@ -1,0 +1,8 @@
+name: ArtMailBox
+version: ${project.version}
+main: com.meteor.ArtMailBox
+authors: [meteor]
+softdepend: [PlaceholderAPI]
+commands:
+  artitem:
+  artmail:

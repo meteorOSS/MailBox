@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ArtMailBox">
+    <output-path>G:/TestSP/plugins</output-path>
+    <root id="archive" name="ArtMailBox.jar">
+      <element id="module-output" name="ArtMailBox" />
+    </root>
+  </artifact>
+</component>
